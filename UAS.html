@@ -113,30 +113,34 @@
     </div>
     <div class="card text-center">
         <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link text-white bg-secondary" href="#1">Contact</a>
+                    <a class="nav-link active text-white bg-secondary" data-toggle="tab" href="#contact" role="tab">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white bg-secondary" href="#2">Nama Kelompok</a>
+                    <a class="nav-link text-white bg-secondary" data-toggle="tab" href="#namakelompok" role="tab">Nama Kelompok</a>
                 </li>
             </ul>
         </div>
-        <div class="card-body bg-secondary" id="1">
-            <h5 class="card-title text-left">INFO</h5>
-            <p class="card-text text-left">Name :</p>
-            <p class="card-text text-left">Email : </p>
-            <p class="card-text text-left">Address : </p>
-            <p class="card-text text-left">No.Phone : </p>
-        </div>
-        <div class="card-body bg-secondary" id="2">
-            <h5 class="card-title text-left">Nama Kelompok</h5>
-            <p class="card-text text-left">Bill Delvin : 1731055</p>
-            <p class="card-text text-left">Alvin Morgan : 1731086</p>
-            <p class="card-text text-left">Thomas Haryanto :  1531099</p>
-            <p class="card-text text-left">Darryl : 1731086</p>
-            <p class="card-text text-left">Vincent Eng : 1731091</p>
-            <p class="card-text text-left">Muhammad Yasin : 1731112 </p>
+        <div class="card-body">
+            <div class="tab-content">
+                <div class="tab-pane fade show active card-body bg-secondary" role="tabpanel" id="contact">
+                    <h5 class="card-title text-left">INFO</h5>
+                    <p class="card-text text-left">Name :</p>
+                    <p class="card-text text-left">Email : </p>
+                    <p class="card-text text-left">Address : </p>
+                    <p class="card-text text-left">No.Phone : </p>
+                </div>
+                <div class="tab-pane fade card-body bg-secondary" role="tabpanel" id="namakelompok">
+                    <h5 class="card-title text-left">Nama Kelompok</h5>
+                    <p class="card-text text-left">Bill Delvin : 1731055</p>
+                    <p class="card-text text-left">Alvin Morgan : 1731086</p>
+                    <p class="card-text text-left">Thomas Haryanto :  1531099</p>
+                    <p class="card-text text-left">Darryl : 1731086</p>
+                    <p class="card-text text-left">Vincent Eng : 1731091</p>
+                    <p class="card-text text-left">Muhammad Yasin : 1731112 </p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
